@@ -1,0 +1,107 @@
+.dropdown {
+    position: relative;
+    display: inline-block;
+    background: #9a6f6f;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #9a6f6f;
+    min-width: 200px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: black;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.container {
+    font-size: large;
+    font-family: 'lato', sans-serif;
+    display: grid;
+    margin: 0 auto;
+    place-items: center;
+    max-width: 1000px;
+    line-height: 1.25;
+    text-align: justify;
+}
+
+.gallery {
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(3, auto); 
+    grid-template-rows: repeat(2, auto);
+    grid-gap: 20px;
+}
+
+.gallery-item {
+    position: relative;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto; 
+}
+
+.caption {
+    font-family: 'lato', sans-serif;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+body, html {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+#main-image {
+    max-width: 40%;
+    height: auto;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
